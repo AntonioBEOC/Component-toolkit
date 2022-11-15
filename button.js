@@ -5,10 +5,22 @@ class button extends HTMLElement {
     };
 
     connectedCallback() {
-        const button = document.createElement('span');
-        button.textContent = 'aceptar';
+
+        const button = document.createElement('button');
+
+        if(this.hasAttribute('text')){
+            button.textContent = this.getAttribute('text')
+        }else{
+            button.textContent = 'accept'
+        }
+
+        button.addEventListener('mouseover', this._highlight.bind(this));
         this.appendChild(button);
+    }
+
+    _highlight() {
+        console.log('a');
     }
 };
 
-customElements.define('toolkit-button', button); 
+customElements.define('toolkit-button', button);
