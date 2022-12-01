@@ -1,0 +1,93 @@
+button{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: relative;
+    border-radius: 50px;
+}
+
+/* PRIMARY STYLES -----------------------------------------------------------------------------*/
+
+.main{
+    background-image: linear-gradient(90deg, #30CFD0 , #330867);
+    border: none;
+    color: white !important;
+}
+
+.main.disabled{
+    background-image: none !important;
+    background-color: #DCD9D9 ;
+}
+
+.main.disabled img{
+    filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(3deg) brightness(106%) contrast(105%) !important;
+}
+
+/* SECONDARY STYLES -----------------------------------------------------------------------------*/
+
+.secondary{ 
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg, #30CFD0 , #330867);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+}
+
+.secondary.disabled{
+    background-image: none !important;
+    border: solid 3px #DCD9D9 !important;
+}
+
+
+.secondary img {
+    filter: invert(0%) sepia(1%) saturate(7495%) hue-rotate(305deg) brightness(105%) contrast(101%);
+}
+
+/* TERTIARY STYLES -----------------------------------------------------------------------------*/
+
+.tertiary{
+    border: none;
+    background: transparent;
+}
+
+.tertiary img {
+    filter: invert(0%) sepia(1%) saturate(7495%) hue-rotate(305deg) brightness(105%) contrast(101%);
+}
+
+.tertiary:hover{
+    text-decoration:underline;
+}
+
+.disabled img {
+    filter: invert(90%) sepia(3%) saturate(114%) hue-rotate(314deg) brightness(98%) contrast(90%) !important;
+}
+
+.disabled {
+    color: #DCD9D9;
+}
+
+
+button:hover{
+    opacity: 75%;
+}
+
+button:active{
+    opacity:200%;
+}
+
+button.label img{
+    padding-left: 8px;
+}
+
+img{
+    max-height: 15px;
+    filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(3deg) brightness(106%) contrast(105%);
+}
+
+
+
+
+
+
