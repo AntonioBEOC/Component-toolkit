@@ -9,18 +9,18 @@ button{
 
 /* PRIMARY STYLES -----------------------------------------------------------------------------*/
 
-.main{
+.primary{
     background-image: linear-gradient(90deg, #30CFD0 , #330867);
     border: none;
     color: white !important;
 }
 
-.main.disabled{
+.primary.disabled{
     background-image: none !important;
     background-color: #DCD9D9 ;
 }
 
-.main.disabled img{
+.primary.disabled img{
     filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(3deg) brightness(106%) contrast(105%) !important;
 }
 
