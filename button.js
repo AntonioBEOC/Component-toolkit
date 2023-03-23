@@ -11,9 +11,9 @@ class button extends HTMLElement {
         const style = document.createElement('link');
         style.setAttribute('rel', 'stylesheet');
         style.setAttribute('href', 'styles.css');
-
+    
         this.shadowRoot.append(style);
-
+        
         //icon 
 
         const button = document.createElement('button');
@@ -57,7 +57,7 @@ class button extends HTMLElement {
     }
 
     _press() {
-        console.log(this)
+        console.log(this);
     }
 
 

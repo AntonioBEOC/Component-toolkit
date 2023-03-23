@@ -68,13 +68,18 @@ button{
     color: #DCD9D9;
 }
 
+/* INTERACTION STYLES -----------------------------------------------------------------------------*/
 
 button:hover{
     opacity: 75%;
 }
 
 button:active{
-    opacity:200%;
+    opacity: +200%;
+}
+
+button.disabled:hover{
+    opacity: 100%;
 }
 
 button.label img{
