@@ -26,7 +26,6 @@ class SearchBar extends HTMLElement{
 
     _fireEvent(event){
         if(event.key == "Enter" || event.type == "click"){
-            console.log(this._searchParameter);
             this.shadowRoot.querySelector('#searchElement').classList.remove('active');
             const toSearch = new Event('toSearch',{bubbles:true,composed:true});
             toSearch.Search = this._searchParameter != '' ? this._filterFunction(this._data,this._searchParameter) : {};
