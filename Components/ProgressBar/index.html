@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Bar</title>
+    <script defer src="progress-bar.js"></script>
+  </head>
+  <body style="padding: 5em;">
+    <h1 style="font-family: sans-serif;">Progress Bar</h1>
+    <progress-bar steps="Paso 1,Paso 2,Paso 3, Paso 4, Paso 5"></progress-bar>
+    <br>
+    <button onclick="decreaseProgress()">Retroceder</button>
+    <button onclick="addProgress()">Avanzar</button>
+    <script>
+      function addProgress() {
+        const progress = document.querySelector("progress-bar");
+        progress.addProgress();
+      }
+      function decreaseProgress() {
+        const progress = document.querySelector("progress-bar");
+        progress.decreaseProgress();
+      }
+    </script>
+  </body>
+</html>
